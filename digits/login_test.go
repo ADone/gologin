@@ -7,9 +7,9 @@ import (
 	"net/url"
 	"testing"
 
+	"github.com/ADone/gologin/testutils"
 	"github.com/dghubble/ctxh"
 	"github.com/dghubble/go-digits/digits"
-	"github.com/dghubble/gologin/testutils"
 	"github.com/stretchr/testify/assert"
 	"golang.org/x/net/context"
 )

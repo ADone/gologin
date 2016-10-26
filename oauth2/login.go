@@ -6,9 +6,9 @@ import (
 	"errors"
 	"net/http"
 
+	"github.com/ADone/gologin"
+	"github.com/ADone/gologin/internal"
 	"github.com/dghubble/ctxh"
-	"github.com/dghubble/gologin"
-	"github.com/dghubble/gologin/internal"
 	"golang.org/x/net/context"
 	"golang.org/x/oauth2"
 )

@@ -1,6 +1,6 @@
 
-# gologin [![Build Status](https://travis-ci.org/dghubble/gologin.svg?branch=master)](https://travis-ci.org/dghubble/gologin) [![GoDoc](https://godoc.org/github.com/dghubble/gologin?status.png)](https://godoc.org/github.com/dghubble/gologin)
-<img align="right" src="https://storage.googleapis.com/dghubble/gologin.png">
+# gologin [![Build Status](https://travis-ci.org/ADone/gologin.svg?branch=master)](https://travis-ci.org/ADone/gologin) [![GoDoc](https://godoc.org/github.com/ADone/gologin?status.png)](https://godoc.org/github.com/ADone/gologin)
+<img align="right" src="https://storage.googleapis.com/ADone/gologin.png">
 
 Package `gologin` provides chainable login handlers for Google, Github, Twitter, Digits, Facebook, Bitbucket, Tumblr, OAuth1, OAuth2, and other authentication providers.
 
@@ -12,15 +12,15 @@ See [examples](examples) for tutorials with apps you can run from the command li
 
 ### Packages
 
-* Google - [docs](http://godoc.org/github.com/dghubble/gologin/google) &#183; [tutorial](examples/google)
-* Github - [docs](http://godoc.org/github.com/dghubble/gologin/github) &#183; [tutorial](examples/github)
-* Facebook - [docs](http://godoc.org/github.com/dghubble/gologin/facebook) &#183; [tutorial](examples/facebook)
-* Twitter - [docs](http://godoc.org/github.com/dghubble/gologin/twitter) &#183; [tutorial](examples/twitter)
-* Digits - [docs](http://godoc.org/github.com/dghubble/gologin/digits) &#183; [tutorial](examples/digits)
-* Bitbucket [docs](http://godoc.org/github.com/dghubble/gologin/bitbucket)
-* Tumblr - [docs](http://godoc.org/github.com/dghubble/gologin/tumblr)
-* OAuth2 - [docs](http://godoc.org/github.com/dghubble/gologin/oauth2)
-* OAuth1 - [docs](http://godoc.org/github.com/dghubble/gologin/oauth1)
+* Google - [docs](http://godoc.org/github.com/ADone/gologin/google) &#183; [tutorial](examples/google)
+* Github - [docs](http://godoc.org/github.com/ADone/gologin/github) &#183; [tutorial](examples/github)
+* Facebook - [docs](http://godoc.org/github.com/ADone/gologin/facebook) &#183; [tutorial](examples/facebook)
+* Twitter - [docs](http://godoc.org/github.com/ADone/gologin/twitter) &#183; [tutorial](examples/twitter)
+* Digits - [docs](http://godoc.org/github.com/ADone/gologin/digits) &#183; [tutorial](examples/digits)
+* Bitbucket [docs](http://godoc.org/github.com/ADone/gologin/bitbucket)
+* Tumblr - [docs](http://godoc.org/github.com/ADone/gologin/tumblr)
+* OAuth2 - [docs](http://godoc.org/github.com/ADone/gologin/oauth2)
+* OAuth1 - [docs](http://godoc.org/github.com/ADone/gologin/oauth1)
 
 ## Features
 
@@ -38,11 +38,11 @@ See [examples](examples) for tutorials with apps you can run from the command li
 
 ## Install
 
-    go get github.com/dghubble/gologin
+    go get github.com/ADone/gologin
 
 ## Docs
 
-Read [GoDoc](https://godoc.org/github.com/dghubble/gologin)
+Read [GoDoc](https://godoc.org/github.com/ADone/gologin)
 
 ## Goals
 
@@ -97,7 +97,7 @@ The `github` `LoginHandler` reads the state from the ctx and redirects to the Au
 
 The `github` `CallbackHandler` receives an auth code and state OAuth2 redirection, validates the state against the state in the ctx, and exchanges the auth code for an OAuth2 Token. The `github` CallbackHandler wraps the lower level `oauth2` `CallbackHandler` to further use the Token to obtain the Github `User` before calling through to the success or failure handlers.
 
-<img src="https://storage.googleapis.com/dghubble/gologin-github.png">
+<img src="https://storage.googleapis.com/ADone/gologin-github.png">
 
 Next, write the success `ContextHandler` to do something with the Token and Github User added to the `ctx`.
 
@@ -134,7 +134,7 @@ The `twitter` `LoginHandler` obtains a request token and secret, adds them to th
 
 The `twitter` `CallbackHandler` receives an OAuth1 token and verifier, reads the request secret from the ctx, and obtains an OAuth1 access token and secret. The `twitter` CallbackHandler wraps the lower level `oauth1` CallbackHandler to further use the access token/secret to obtain the Twitter `User` before calling through to the success or failure handlers.
 
-<img src="https://storage.googleapis.com/dghubble/gologin-twitter.png">
+<img src="https://storage.googleapis.com/ADone/gologin-twitter.png">
 
 Next, write the success `ContextHandler` to do something with the access token/secret and Twitter User added to the `ctx`.
 
@@ -157,7 +157,7 @@ See the [Twitter tutorial](examples/twitter) for a web app you can run from the 
 
 OAuth2 `StateHandler` implements OAuth 2 [RFC 6749](https://tools.ietf.org/html/rfc6749) 10.12 CSRF Protection using non-guessable values in short-lived HTTPS-only cookies to provide reasonable assurance the user in the login phase and callback phase are the same. If you wish to implement this differently, write a `ContextHandler` which sets a *state* in the ctx, which is expected by LoginHandler and CallbackHandler.
 
-You may use `oauth2.WithState(context.Context, state string)` for this. [docs](https://godoc.org/github.com/dghubble/gologin/oauth2#WithState)
+You may use `oauth2.WithState(context.Context, state string)` for this. [docs](https://godoc.org/github.com/ADone/gologin/oauth2#WithState)
 
 ### Failure Handlers
 

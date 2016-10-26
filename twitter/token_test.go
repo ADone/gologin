@@ -7,10 +7,10 @@ import (
 	"net/url"
 	"testing"
 
+	"github.com/ADone/gologin"
+	oauth1Login "github.com/ADone/gologin/oauth1"
+	"github.com/ADone/gologin/testutils"
 	"github.com/dghubble/ctxh"
-	"github.com/dghubble/gologin"
-	oauth1Login "github.com/dghubble/gologin/oauth1"
-	"github.com/dghubble/gologin/testutils"
 	"github.com/dghubble/oauth1"
 	"github.com/stretchr/testify/assert"
 	"golang.org/x/net/context"

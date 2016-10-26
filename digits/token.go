@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"net/http"
 
+	"github.com/ADone/gologin"
+	oauth1Login "github.com/ADone/gologin/oauth1"
 	"github.com/dghubble/ctxh"
 	"github.com/dghubble/go-digits/digits"
-	"github.com/dghubble/gologin"
-	oauth1Login "github.com/dghubble/gologin/oauth1"
 	"github.com/dghubble/oauth1"
 	"golang.org/x/net/context"
 )

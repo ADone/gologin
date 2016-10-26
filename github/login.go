@@ -4,9 +4,9 @@ import (
 	"errors"
 	"net/http"
 
+	"github.com/ADone/gologin"
+	oauth2Login "github.com/ADone/gologin/oauth2"
 	"github.com/dghubble/ctxh"
-	"github.com/dghubble/gologin"
-	oauth2Login "github.com/dghubble/gologin/oauth2"
 	"github.com/google/go-github/github"
 	"golang.org/x/net/context"
 	"golang.org/x/oauth2"

@@ -3,9 +3,9 @@ package oauth1
 import (
 	"net/http"
 
+	"github.com/ADone/gologin"
+	"github.com/ADone/gologin/internal"
 	"github.com/dghubble/ctxh"
-	"github.com/dghubble/gologin"
-	"github.com/dghubble/gologin/internal"
 	"github.com/dghubble/oauth1"
 	"golang.org/x/net/context"
 )

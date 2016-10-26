@@ -6,9 +6,9 @@ import (
 	"regexp"
 	"strings"
 
+	"github.com/ADone/gologin"
 	"github.com/dghubble/ctxh"
 	"github.com/dghubble/go-digits/digits"
-	"github.com/dghubble/gologin"
 	"github.com/dghubble/sling"
 	"golang.org/x/net/context"
 )

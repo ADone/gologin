@@ -6,9 +6,9 @@ import (
 	"net/url"
 	"testing"
 
+	oauth1Login "github.com/ADone/gologin/oauth1"
+	"github.com/ADone/gologin/testutils"
 	"github.com/dghubble/ctxh"
-	oauth1Login "github.com/dghubble/gologin/oauth1"
-	"github.com/dghubble/gologin/testutils"
 	"github.com/dghubble/oauth1"
 	"github.com/stretchr/testify/assert"
 	"golang.org/x/net/context"

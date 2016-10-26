@@ -9,8 +9,8 @@ import (
 	"net/http"
 	"os"
 
+	"github.com/ADone/gologin/twitter"
 	"github.com/dghubble/ctxh"
-	"github.com/dghubble/gologin/twitter"
 	"github.com/dghubble/oauth1"
 	twitterOAuth1 "github.com/dghubble/oauth1/twitter"
 	"github.com/dghubble/sessions"

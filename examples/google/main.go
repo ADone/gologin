@@ -8,9 +8,9 @@ import (
 	"net/http"
 	"os"
 
+	"github.com/ADone/gologin"
+	"github.com/ADone/gologin/google"
 	"github.com/dghubble/ctxh"
-	"github.com/dghubble/gologin"
-	"github.com/dghubble/gologin/google"
 	"github.com/dghubble/sessions"
 	"golang.org/x/net/context"
 	"golang.org/x/oauth2"

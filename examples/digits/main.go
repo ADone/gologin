@@ -9,8 +9,8 @@ import (
 	"net/http"
 	"os"
 
+	"github.com/ADone/gologin/digits"
 	"github.com/dghubble/ctxh"
-	"github.com/dghubble/gologin/digits"
 	"github.com/dghubble/sessions"
 	"golang.org/x/net/context"
 )
